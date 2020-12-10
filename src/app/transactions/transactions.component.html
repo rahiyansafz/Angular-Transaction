@@ -1,0 +1,9 @@
+<div>
+<ul>
+  <li *ngFor="let transaction of transactions">
+   {{transaction.date |date }}: {{transaction.amount | currency}}
+  </li>
+</ul>
+</div>
+<hr>
+<input (click)="this.location.back()" type="button" value="go back"/>

@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let account of accounts">
+     <a routerLink="account/{{account.id}}">{{account.id}} - {{account.name}}</a>. Balance: {{account.balance| currency}}
+     <br>
+     transactions:
+     <a routerLink="account/{{account.id}}/transactions" routerLinkActive='active'> ...</a>
+     <hr>
+  </li>
+</ul>

@@ -1,0 +1,11 @@
+<div>
+Account:{{account.name}}
+<br>
+Balance: {{account.balance | currency}}
+<br>
+<a routerLink='/account/{{account.id}}/transactions'>Transactions...</a>
+
+<hr>
+<input type="button" (click)="this.location.back()" value="Back">
+
+</div>
